@@ -1,0 +1,69 @@
+[
+	{
+		"id": 1,
+		"text": "专业管理",
+		"attributes": {
+			"url": "major.jsp"
+		}
+	}, {
+		"id": 2,
+		"text": "试听学生管理",
+		"attributes": {
+			"url": "studentListen.jsp"
+		}
+	}, {
+		"id": 3,
+		"text": "分期机构管理",
+		"attributes": {
+			"url": "borrowOrg.jsp"
+		}
+	}, {
+		"id": 4,
+		"text": "教师管理",
+		"attributes": {
+			"url": "teacher.jsp"
+		}
+	}, {
+		"id": 5,
+		"text": "试听班级管理",
+		"attributes": {
+			"url": "classesListen.jsp"
+		}
+	}, {
+		"id": 6,
+		"text": "班级管理",
+		"attributes": {
+			"url": "classesStudy.jsp"
+		}
+	}, {
+		"id": 7,
+		"text": "缴费管理",
+		"attributes": {
+			"url": "fee.jsp"
+		}
+	}, {
+		"id": 8,
+		"text": "宿舍管理",
+		"attributes": {
+			"url": "room.jsp"
+		}
+	}, {
+		"id": 9,
+		"text": "宿舍费用管理",
+		"attributes": {
+			"url": "roomFee.jsp"
+		}
+	}, {
+		"id": 10,
+		"text": "学生宿舍费用管理",
+		"attributes": {
+			"url": "roomFeeStudent.jsp"
+		}
+	}, {
+		"id": 11,
+		"text": "学生管理",
+		"attributes": {
+			"url": "studentStudy.jsp"
+		}
+	}
+]

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.entor.mapper.ClassesListenMapper">
+	
+	<select id="queryByPage" parameterType="map" resultType="ClassesListenVO">
+		SELECT  s.*,m.name majorName ,t.teacher_name teacherName  FROM crm_classes_listen s LEFT JOIN crm_major m ON s.major_id = m.id JOIN crm_teacher t ON s.teacher_id=t.teacher_id
+		<where>
+			<if test="name!=null and name!=''">
+				<bind name="name" value="'%'+name+'%'"/>
+				and classes_name like #{name}
+			</if>
+		</where>
+		<if test="start!=null and pageSize!=null">
+			limit #{start},#{pageSize}
+		</if>
+		
+	</select>
+	<select id="queryAll" resultType="ClassesListenVO">
+		SELECT  s.*,m.name majorName ,t.teacher_name teacherName  FROM crm_classes_listen s LEFT JOIN crm_major m ON s.major_id = m.id JOIN crm_teacher t ON s.teacher_id=t.teacher_id
+	</select>
+</mapper>
